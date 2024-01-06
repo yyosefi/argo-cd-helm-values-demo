@@ -7,5 +7,5 @@ appVersion: "1.0"
 
 dependencies:
 - name: hello-world
-  version: 0.2.0
-  repository: https://helm.github.io/examples
+  version: "0.2.0"
+  repository: "oci://docker.io/yyosefi"
