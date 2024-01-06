@@ -6,18 +6,18 @@ metadata:
 spec:
   destination:
     namespace: prod
-    name: kind
+    name: 'in-cluster'
   project: default
   sources:
     # Chart from Chart Repo
     - chart: hello-world
-      repoURL: https://helm.github.io/examples
+      repoURL: oci://docker.io/yyosefi
       targetRevision: 0.1.0
       helm:
         valueFiles:
         - $values/multiple-source-application/values-prod.yaml
     # Values from Git
-    - repoURL: 'https://github.com/morey-tech/argo-cd-helm-values-demo'
+    - repoURL: 'https://github.com/yyosefi/argo-cd-helm-values-demo'
       targetRevision: HEAD
       ref: values
   syncPolicy:
