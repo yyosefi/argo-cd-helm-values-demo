@@ -6,11 +6,11 @@ metadata:
 spec:
   destination:
     namespace: stage
-    name: 'in-cluster'
+    name: in-cluster
   project: default
   source:
     chart: hello-world
-    repoURL: oci://docker.io/yyosefi
+    repoURL: oci://ghcr.io/yyosefi
     targetRevision: 0.1.0
     helm:
       values: |
