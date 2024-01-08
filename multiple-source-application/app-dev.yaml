@@ -6,12 +6,13 @@ metadata:
 spec:
   destination:
     namespace: dev
-    name: 'in-cluster'
+    name: in-cluster
   project: default
   sources:
     # Chart from Chart Repo
     - chart: hello-world
-      repoURL: oci://docker.io/yyosefi
+      repoURL: https://helm.github.io/examples
+      # repoURL: oci://docker.io/yyosefi
       targetRevision: 0.1.0
       helm:
         # https://argo-cd.readthedocs.io/en/stable/user-guide/multiple_sources/#helm-value-files-from-external-git-repository
